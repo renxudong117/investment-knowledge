@@ -26,7 +26,10 @@ export default defineConfig({
       '/framework/': [
         {
           text: '投资框架',
-          items: [{ text: '概览', link: '/framework/' }]
+          items: [
+            { text: '概览', link: '/framework/' },
+            { text: '投资推演：200万半仓30日模拟', link: '/framework/simulation' }
+          ]
         }
       ],
       '/valuation/': [
