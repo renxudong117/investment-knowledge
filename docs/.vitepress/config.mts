@@ -8,6 +8,9 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
 
+  // 部署到 GitHub Pages 项目页时由 CI 注入 /<仓库名>/；本地与根路径部署回落为 '/'
+  base: process.env.DOCS_BASE || '/',
+
   themeConfig: {
     // 顶部导航
     nav: [
@@ -35,7 +38,10 @@ export default defineConfig({
       '/cases/': [
         {
           text: '案例复盘',
-          items: [{ text: '概览', link: '/cases/' }]
+          items: [
+            { text: '概览', link: '/cases/' },
+            { text: '示例案例（模板）', link: '/cases/example' }
+          ]
         }
       ],
       '/checklists/': [
