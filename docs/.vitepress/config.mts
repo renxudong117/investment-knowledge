@@ -44,7 +44,8 @@ export default defineConfig({
           text: '案例复盘',
           items: [
             { text: '概览', link: '/cases/' },
-            { text: '示例案例（模板）', link: '/cases/example' }
+            { text: '示例案例（模板）', link: '/cases/example' },
+            { text: 'AI算力主题基金三只持仓体检（2026-06）', link: '/cases/ai-compute-funds-2026-06' }
           ]
         }
       ],
